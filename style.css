@@ -1,0 +1,149 @@
+:root {
+  --text: #000000;
+  --primary: #0a80c0;
+
+  --padding: 1rem;
+  --radius: 10px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #74ebd5, #ACB6E5);
+  color: var(--text);
+}
+
+header {
+  background: rgba(2, 119, 182, 0.9);
+  backdrop-filter: blur(10px);
+  padding: 1.5rem;
+  text-align: center;
+  color: rgb(0, 0, 0);
+}
+
+nav {
+  margin-top: 10px;
+}
+
+nav a {
+  color: rgb(0, 0, 0);
+  margin: 0 10px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+nav a.active {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.container {
+  max-width: 500px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  background: rgba(255,255,255,0.35);
+  border: 1px solid rgba(255,255,255,0.4);
+  border-radius: 16px;
+  backdrop-filter: blur(10px);
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.hero {
+  text-align: center;
+}
+
+.hero h2 {
+  font-size: 1.6rem;
+  margin-bottom: 0.5rem;
+}
+
+form {
+  display: flex;
+  gap: 10px;
+  background: white;
+  padding: 10px;
+  border-radius: 12px;
+}
+
+input {
+  flex: 1;
+  border: none;
+  border-radius: 10px;
+  padding: 12px;
+  outline: none;
+}
+
+button {
+  background: var(--primary);
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+  padding: 12px 16px;
+  transition: 0.2s;
+}
+
+button:hover {
+  background: #005f8a;
+  transform: scale(1.02);
+}
+
+#weatherResult {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.city-card {
+  background: white;
+  border-radius: 16px;
+  padding: 1.2rem;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  border-left: 5px solid var(--primary);
+}
+
+.city-card h2, .city-card h3 {
+  text-align: center;
+}
+
+.city-card img {
+  width: 70px;
+  height: 70px;
+  margin: 0 auto;
+  display: block;
+}
+
+#favoritesList {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+article { flex: 33%; }
+
+@media (max-width: 1200px) {
+  article { flex: 50%; }
+}
+
+@media (max-width: 992px) {
+  section { flex-direction: column; }
+}
+
+@media (max-width: 600px) {
+  form { flex-direction: column; }
+  nav { flex-direction: column; }
+}

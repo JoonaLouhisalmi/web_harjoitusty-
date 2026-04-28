@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sääsovellus</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+  <h1>🌤 Sääsovellus</h1>
+  
+  <nav>
+    <a href="index.html" class="active">Haku</a>
+    <a href="favorites.html">Suosikit</a>
+  </nav>
+</header>
+
+<main>
+  <div class="container">
+
+    <div class="hero">
+      <h2>Hae reaaliaikainen sää</h2>
+      <p>Syötä kaupunki</p>
+    </div>
+
+    <form id="weatherForm">
+      <input type="text" id="city" placeholder="Esim. Oulu, Helsinki..." required>
+      <button type="submit">Hae</button>
+    </form>
+
+    <section id="weatherResult"></section>
+  
+  </div>
+</main>
+
+<script src="config.js"></script>
+<script src="weather.js"></script>
+
+</body>
+</html>
