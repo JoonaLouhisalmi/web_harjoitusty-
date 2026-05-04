@@ -39,7 +39,7 @@ form.addEventListener("submit", async (e) => {
     `;
 
   } catch {
-    result.innerHTML = "<p>⚠️ Yhteysvirhe. Yritä uudelleen.</p>";
+    result.innerHTML = "<p> Yhteysvirhe. Yritä uudelleen.</p>";
   }
 });
 
